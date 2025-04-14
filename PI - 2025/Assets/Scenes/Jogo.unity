@@ -202,7 +202,7 @@ Transform:
   m_GameObject: {fileID: 701118306}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.023419203, y: 2.6932085, z: 0}
+  m_LocalPosition: {x: 0.24, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -221,8 +221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 5167097185799342648, guid: a006fd48fa4ac71448208af171c0a3eb, type: 3}
-  correct: {fileID: 8300000, guid: 24977d39f7c07604c9da83ef0c4e1cd9, type: 3}
-  incorrect: {fileID: 8300000, guid: 36e6dbe302d863e4f9617976b9b121ab, type: 3}
 --- !u!61 &701118310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -352,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 721152505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.59719, y: 2.5526931, z: 0}
+  m_LocalPosition: {x: -4.94, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -371,8 +369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 5167097185799342648, guid: a006fd48fa4ac71448208af171c0a3eb, type: 3}
-  correct: {fileID: 8300000, guid: 24977d39f7c07604c9da83ef0c4e1cd9, type: 3}
-  incorrect: {fileID: 8300000, guid: 36e6dbe302d863e4f9617976b9b121ab, type: 3}
 --- !u!61 &721152509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -786,7 +782,7 @@ Transform:
   m_GameObject: {fileID: 2059420363}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.018735, y: 2.4590163, z: 0}
+  m_LocalPosition: {x: 4.4, y: 2.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -805,8 +801,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 5167097185799342648, guid: a006fd48fa4ac71448208af171c0a3eb, type: 3}
-  correct: {fileID: 8300000, guid: 24977d39f7c07604c9da83ef0c4e1cd9, type: 3}
-  incorrect: {fileID: 8300000, guid: 36e6dbe302d863e4f9617976b9b121ab, type: 3}
 --- !u!61 &2059420367
 BoxCollider2D:
   m_ObjectHideFlags: 0
