@@ -10,21 +10,39 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 
-    public void OpenCreditsPainel()
+    public void OpenCreditsPainelBTN()
     {
         creditsPainel.SetActive(true);
     }
 
-    public void CloseCreditsPainel()
+    public void CloseCreditsPainelBTN()
     {
         creditsPainel.SetActive(false);
     }
-    public void OpenLevelPainel() 
+
+    public void OpenLevelPainelBTN() 
     {
-    
+        levelPainel.SetActive(true);
     }
-    public void OpenControlPainel() 
-    {    
-    
+
+    public void CloseLevelPainelBTN()
+    {
+        levelPainel.SetActive(false);
+    }
+
+    public void OpenControlPainelBTN() 
+    {
+        controlPainel.SetActive(true);
+    }
+
+    public void CloseControlPaineBTN()
+    {
+        controlPainel.SetActive(false);
+    }
+
+    public void QuitBTN()
+    {
+        Application.Quit();
+        print("Saiu");
     }
 }
