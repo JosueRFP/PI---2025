@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 1172098519}
   - component: {fileID: 1172098518}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontal: 0
   vertical: 0
-  speed: 5
+  speed: 7
 --- !u!50 &1172098519
 Rigidbody2D:
   serializedVersion: 5
