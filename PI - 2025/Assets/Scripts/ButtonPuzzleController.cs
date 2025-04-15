@@ -1,18 +1,18 @@
 using UnityEngine;
 
 [RequireComponent (typeof(BoxCollider2D))]
-public class ButtonPuzzle : MonoBehaviour
+public class ButtonPuzzleController : MonoBehaviour
 {
-    [SerializeField] static string correctOrder = "3312";
+    [SerializeField]  string correctOrder = "";
     [SerializeField] static string playerOrder = "";
 
     [SerializeField] static int digitsTotal = 0;
-    [SerializeField] GameObject gate;
+    [SerializeField] GameObject npc;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -24,15 +24,14 @@ public class ButtonPuzzle : MonoBehaviour
         {
             if (playerOrder == correctOrder)
             {
-                print("Correto!");
-                Instantiate(gate);
-
+                 Instantiate(npc);
+                
             }
             else
             {
                 playerOrder = "";
                 digitsTotal = 0;
-                print("Incorreto");
+                
                 
 
             }
