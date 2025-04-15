@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2b1720a983a894fac88617f33357a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gate: {fileID: 5167097185799342648, guid: a006fd48fa4ac71448208af171c0a3eb, type: 3}
+  gate: {fileID: 3447137775525511472, guid: 691aa29d21c3fd04bae6746b744da229, type: 3}
 --- !u!61 &701118310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2b1720a983a894fac88617f33357a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gate: {fileID: 5167097185799342648, guid: a006fd48fa4ac71448208af171c0a3eb, type: 3}
+  gate: {fileID: 3447137775525511472, guid: 691aa29d21c3fd04bae6746b744da229, type: 3}
 --- !u!61 &721152509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -399,7 +399,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -800,7 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2b1720a983a894fac88617f33357a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gate: {fileID: 5167097185799342648, guid: a006fd48fa4ac71448208af171c0a3eb, type: 3}
+  gate: {fileID: 3447137775525511472, guid: 691aa29d21c3fd04bae6746b744da229, type: 3}
 --- !u!61 &2059420367
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -831,7 +831,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
