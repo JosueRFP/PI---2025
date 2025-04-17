@@ -20,7 +20,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void Awake()
     {
-       //typeTxt = FindObjectOfType<DialogController>();
+        typeTxt = FindAnyObjectByType<DialogController>();
     }
     
     void Start()
@@ -42,21 +42,24 @@ public class DialogueSystem : MonoBehaviour
                 break;
         }
     }
-    void Waiting()
+
+    public void Next()
     {
-        
+        typeTxt.fullText = dialogueData.talkScript[currentText++].text;
+        if(currentText == dialogueData.talkScript.Count) finishedTxt = true;
+        //typeTxt.StartTyping();
+        states = States.Typing;
     }
 
     void Typing()
     {
 
+    } 
+
+    void Waiting()
+    {
+        
     }
 
-    public void Next()
-    {
-        typeTxt.fullText = dialogueData.talkScript[currentText++].text;
-        //if(currentText == dialogueData.talkScript.Count) finishedTxt = true;
-        //typeTxt.StartTyping();
-        states = States.Typing;
-    }
+    
 }
