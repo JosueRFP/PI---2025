@@ -16,7 +16,7 @@ public class DialogController : MonoBehaviour
     }
 
    
-    IEnumerator StartTyping()
+     public IEnumerator StartTyping()
     {
         textObj.text = fullText;
         textObj.maxVisibleCharacters = 0;
@@ -29,4 +29,4 @@ public class DialogController : MonoBehaviour
 
    
 }
-// video referencia https://www.youtube.com/watch?v=PsvhXlBlfp4&t=238s 3:20 a 5:51
+// video referencia https://www.youtube.com/watch?v=PsvhXlBlfp4&t=238s 

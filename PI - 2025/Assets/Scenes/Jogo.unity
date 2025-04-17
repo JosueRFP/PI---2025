@@ -427,6 +427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctOrder: 3312
   npc: {fileID: 3030737407299826120, guid: 980c7cd32f354fc4b8476466a2005a4a, type: 3}
+  audioClip: {fileID: 0}
 --- !u!61 &701118310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -576,6 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctOrder: 3312
   npc: {fileID: 3030737407299826120, guid: 980c7cd32f354fc4b8476466a2005a4a, type: 3}
+  audioClip: {fileID: 0}
 --- !u!61 &721152509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -654,7 +656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeDelay: 0.05
   textObj: {fileID: 1487944835}
-  fullText: "Voc\xEA vai nos ajudar a resgater nosso deus"
+  fullText: 
 --- !u!4 &984617273
 Transform:
   m_ObjectHideFlags: 0
@@ -682,7 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59d7f2c203ce4947900e83276eb718c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueData: {fileID: 0}
+  dialogueData: {fileID: 11400000, guid: c6156574e8bab22489c7751b23b68f7e, type: 2}
 --- !u!1 &1172098517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,6 +1380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctOrder: 3312
   npc: {fileID: 3030737407299826120, guid: 980c7cd32f354fc4b8476466a2005a4a, type: 3}
+  audioClip: {fileID: 0}
 --- !u!61 &2059420367
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -8,12 +8,15 @@ public class ButtonPuzzleController : MonoBehaviour
 
     [SerializeField] static int digitsTotal = 0;
     [SerializeField] GameObject npc;
-    
+
+    public AudioClip audioClip;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-       
+        audioClip = GetComponent<AudioClip>();
     }
+
 
     // Update is called once per frame
     void Update()

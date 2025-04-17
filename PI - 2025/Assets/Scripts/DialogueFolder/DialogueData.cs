@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 
@@ -17,8 +18,9 @@ public struct Dialogue
 [CreateAssetMenu(fileName = "DialogueData", menuName = "ScriptableObject/TalkScript", order = 1)]
 public class DialogueData : ScriptableObject 
 {
-    public Dialogue[] talkScript;
+    public List<Dialogue> talkScript;
+    
 
     
 }
-// video refereencia https://www.youtube.com/watch?v=PsvhXlBlfp4&t=238s 5:52 a 7:52
+// video refereencia para o dialogo https://www.youtube.com/watch?v=PsvhXlBlfp4&t=238s 

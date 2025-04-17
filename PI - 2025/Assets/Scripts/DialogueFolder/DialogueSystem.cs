@@ -4,9 +4,9 @@ using UnityEngine;
 
 public enum States
 {
-    Disabele,
-    Waiting,
-    Typing
+    DISABLE,
+    WAITING,
+    TYPING
 }
 public class DialogueSystem : MonoBehaviour
 {
@@ -25,19 +25,19 @@ public class DialogueSystem : MonoBehaviour
     
     void Start()
     {
-        states = States.Disabele;
+        states = States.DISABLE;
     }
 
     void Update()
     {
-        if (states == States.Disabele) return;
+        if (states == States.DISABLE) return;
 
         switch (states) 
         { 
-            case States.Waiting:
+            case States.WAITING:
                 Waiting();
                 break;
-                case States.Typing:
+                case States.TYPING:
                 Typing();
                 break;
         }
@@ -47,8 +47,8 @@ public class DialogueSystem : MonoBehaviour
     {
         typeTxt.fullText = dialogueData.talkScript[currentText++].text;
         if(currentText == dialogueData.talkScript.Count) finishedTxt = true;
-        //typeTxt.StartTyping();
-        states = States.Typing;
+        typeTxt.StartTyping();
+        states = States.TYPING;
     }
 
     void Typing()
@@ -60,6 +60,4 @@ public class DialogueSystem : MonoBehaviour
     {
         
     }
-
-    
 }
