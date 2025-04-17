@@ -1,14 +1,18 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using System;
 
 
 public class DialogController : MonoBehaviour
 {
-    [SerializeField] float typeDelay;
+    public Action TypeFinished;
+    [SerializeField] float typeDelay = 5f;
     public TextMeshProUGUI textObj;
 
     public string fullText;
+
+    Coroutine coroutine;
     
     void Start()
     {
@@ -16,15 +20,24 @@ public class DialogController : MonoBehaviour
     }
 
    
-     public IEnumerator StartTyping()
-    {
+     public  IEnumerator StartTyping()
+     {
         textObj.text = fullText;
         textObj.maxVisibleCharacters = 0;
-        for (int i = 0; i < textObj.text.Length; i++) {
+        for (int i = 0; i < textObj.text.Length; i++) 
+        {
             textObj.maxVisibleCharacters = i;
             yield return new WaitForSeconds(typeDelay);
 
         }
+
+        TypeFinished?.Invoke();
+     }
+
+    public void Skip()
+    {
+        StopCoroutine(coroutine);
+        textObj.maxVisibleCharacters = textObj.text.Length;
     }
 
    

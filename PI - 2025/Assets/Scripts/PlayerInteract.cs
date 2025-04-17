@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayeriNTERACT : MonoBehaviour
+public class PlayerInteract : MonoBehaviour
 {
     public Transform interctPerson;
     DialogueSystem dialogueSystem;
@@ -14,7 +14,7 @@ public class PlayeriNTERACT : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Mathf.Abs(transform.position.x - interctPerson.position.x) < 2.0f)
+        if (Mathf.Abs(transform.position.x - interctPerson.position.x) < 2.0f)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
