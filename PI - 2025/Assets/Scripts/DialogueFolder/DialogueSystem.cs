@@ -21,6 +21,8 @@ public class DialogueSystem : MonoBehaviour
     private void Awake()
     {
         typeTxt = FindAnyObjectByType<DialogController>();
+
+        typeTxt.TypeFinished = OnTypeFinish;
     }
     
     void Start()
@@ -51,13 +53,37 @@ public class DialogueSystem : MonoBehaviour
         states = States.TYPING;
     }
 
-    void Typing()
+    void OnTypeFinish()
     {
+        states = States.WAITING;
+    }
 
-    } 
+    
 
     void Waiting()
     {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (!finishedTxt)
+            {
+                Next();
+            }
+            else
+            {
+                states = States.DISABLE;
+                currentText = 0;
+                finishedTxt = false;
+            }
+        }
         
+
+    }
+    void Typing()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            typeTxt.Skip();
+            states = States.WAITING;
+        }
     }
 }

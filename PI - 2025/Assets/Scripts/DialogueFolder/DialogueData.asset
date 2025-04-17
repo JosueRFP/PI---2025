@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: DialogueData
   m_EditorClassIdentifier: 
   talkScript:
-  - name: Bonelli
-    text: Oi Senhor
-  - name: Senhor
-    text: 'Prezer em velo jovem
-
-'
+  - name: Prota
+    text: Como posso te ajudar meu amigo?
+  - name: Jovem
+    text: Escape com o todos os artefatos
