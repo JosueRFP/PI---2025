@@ -7,14 +7,14 @@ public class ButtonPuzzleController : MonoBehaviour
     [SerializeField] static string playerOrder = "";
 
     [SerializeField] static int digitsTotal = 0;
-    [SerializeField] GameObject npc;
 
-    public AudioClip audioClip;
+    [SerializeField] GameObject painel, badPainel;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        audioClip = GetComponent<AudioClip>();
+        
     }
 
 
@@ -27,16 +27,14 @@ public class ButtonPuzzleController : MonoBehaviour
         {
             if (playerOrder == correctOrder)
             {
-                 Instantiate(npc);
+                painel.SetActive(true);
                 
             }
             else
             {
                 playerOrder = "";
                 digitsTotal = 0;
-                
-                
-
+                badPainel.SetActive(true);
             }
         }
     }
