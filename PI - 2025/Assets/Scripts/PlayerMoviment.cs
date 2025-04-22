@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMoviment : MonoBehaviour
 {
     [SerializeField] float horizontal, vertical, speed;
+    [SerializeField] Transform swordPos;
     Rigidbody2D rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,5 +24,7 @@ public class PlayerMoviment : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontal, vertical) * speed;
+
+
     }
 }
