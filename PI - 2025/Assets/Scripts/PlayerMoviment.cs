@@ -8,6 +8,8 @@ public class PlayerMoviment : MonoBehaviour
     [SerializeField] float horizontal, vertical, speed;
     [SerializeField] Transform swordPos;
     Rigidbody2D rb;
+
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +21,13 @@ public class PlayerMoviment : MonoBehaviour
     {
         vertical = Input.GetAxisRaw("Vertical");
         horizontal = Input.GetAxisRaw("Horizontal");
+
+        Vector2 moveDirection = new Vector2 (horizontal, vertical).normalized;
+        if(moveDirection.magnitude > 0)
+        {
+            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        }
     }
 
     private void FixedUpdate()
