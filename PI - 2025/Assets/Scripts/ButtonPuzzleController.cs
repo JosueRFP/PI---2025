@@ -8,7 +8,7 @@ public class ButtonPuzzleController : MonoBehaviour
 
     [SerializeField] static int digitsTotal = 0;
 
-    [SerializeField] GameObject painel, badPainel;
+    [SerializeField] GameObject unlockObject, enemy;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,14 +27,13 @@ public class ButtonPuzzleController : MonoBehaviour
         {
             if (playerOrder == correctOrder)
             {
-                painel.SetActive(true);
-                
+                Destroy(unlockObject);
             }
             else
             {
                 playerOrder = "";
                 digitsTotal = 0;
-                badPainel.SetActive(true);
+                enemy.SetActive(true);
             }
         }
     }
