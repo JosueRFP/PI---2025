@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -25,10 +26,9 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject)
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(collision.gameObject);
-            deadPainel.SetActive(true);
+            SceneManager.LoadScene("Fase1");
         }
     }
 }
